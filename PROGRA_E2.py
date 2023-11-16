@@ -1,1 +1,105 @@
-{"cells":[{"cell_type":"code","source":["class Operaciones:\n","\n","    def __init__(self):\n","        self.valor1=int(input(\"Ingrese primer valor:\"))\n","        self.valor2=int(input(\"Ingrese segundo valor:\"))\n","\n","    def sumar(self):\n","        su=self.valor1+self.valor2\n","        print(\"La suma es\",su)\n","\n","    def restar(self):\n","        re=self.valor1-self.valor2\n","        print(\"La resta es\",re)\n","\n","    def multiplicar(self):\n","        pro=self.valor1*self.valor2\n","        print(\"El producto es\",pro)\n","\n","    def division(self):\n","        divi=self.valor1/self.valor2\n","        print(\"La division es\",divi)\n","\n","# bloque principal\n","operacion1=Operaciones()\n","operacion1.sumar()\n","operacion1.restar()\n","operacion1.multiplicar()\n","operacion1.division()"],"metadata":{"id":"k2qtFZUxa91v","executionInfo":{"status":"ok","timestamp":1700109522578,"user_tz":360,"elapsed":38115,"user":{"displayName":"","userId":""}},"outputId":"22b9826c-a6f2-4486-88a6-f586a0f3c1c6","colab":{"base_uri":"https://localhost:8080/"}},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Ingrese primer valor:40\n","Ingrese segundo valor:29\n","La suma es 69\n","La resta es 11\n","El producto es 1160\n","La division es 1.3793103448275863\n"]}]},{"cell_type":"code","source":["class Cuadrado:\n","\n","    def __init__(self,lado):\n","        self.lado=lado\n","\n","    def mostrar_perimetro(self):\n","        per=self.lado*4\n","        print(\"El perimetro del cuadrado es:\",per)\n","\n","    def mostrar_superficie(self):\n","        sup=self.lado*self.lado\n","        print(\"La superficie del cuadrado es:\",sup)\n","\n","# bloque principal\n","cuadrado1=Cuadrado(12)\n","cuadrado1.mostrar_perimetro()\n","cuadrado1.mostrar_superficie()"],"metadata":{"id":"ecC9h8JUbKyP","executionInfo":{"status":"ok","timestamp":1700109553594,"user_tz":360,"elapsed":193,"user":{"displayName":"","userId":""}},"outputId":"cf4cec60-cf8e-4bf9-d78d-bb6c4962cc3d","colab":{"base_uri":"https://localhost:8080/"}},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["El perimetro del cuadrado es: 48\n","La superficie del cuadrado es: 144\n"]}]},{"cell_type":"code","source":["class mayor_edad:\n","    def __init__(self):\n","        self.val1=int(input(\"ingrese su edad:\"))\n","\n","    def resultado(self):\n","        if self.val1 >= 18:\n","            print(\" Eres mayor de edad puedes pasar\")\n","        else:\n","            print(\"Acceso denegado,Eres menor de edad\")\n","\n","#Bloque principal\n","prueba=mayor_edad()\n","prueba.resultado()"],"metadata":{"id":"AQ9o1sHsbSSS","executionInfo":{"status":"ok","timestamp":1700109576725,"user_tz":360,"elapsed":5215,"user":{"displayName":"","userId":""}},"outputId":"14bc8019-e7f4-4405-a81d-17329e8cca24","colab":{"base_uri":"https://localhost:8080/"}},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["ingrese su edad:17\n","Acceso denegado,Eres menor de edad\n"]}]},{"cell_type":"code","source":["class Triangulo:\n","\n","    def inicializar(self):\n","        self.lado1=int(input(\"Ingrese primer lado:\"))\n","        self.lado2=int(input(\"Ingrese segundo lado:\"))\n","        self.lado3=int(input(\"Ingrese tercer lado:\"))\n","\n","    def imprimir(self):\n","        print(\"Valores de los lados del triangulo\")\n","        print(\"Lado 1\",self.lado1)\n","        print(\"Lado 2\",self.lado2)\n","        print(\"Lado 3\",self.lado3)\n","\n","    def lado_mayor(self):\n","        print(\"Lado mayor\")\n","        if self.lado1>self.lado2 and self.lado1>self.lado3:\n","            print(self.lado1)\n","        else:\n","            if self.lado2>self.lado3:\n","                print(self.lado2)\n","            else:\n","                print(self.lado3)\n","\n","    def es_equilatero(self):\n","        if self.lado1==self.lado2 and self.lado1==self.lado3:\n","            print(\"El triangulo es equilatero\")\n","        else:\n","            print(\"El triangulo no es equilatero\")\n","\n","# bloque principal\n","triangulo1=Triangulo()\n","triangulo1.inicializar()\n","triangulo1.imprimir()\n","triangulo1.lado_mayor()\n","triangulo1.es_equilatero()\n"],"metadata":{"id":"dKcFWw5nbXne","executionInfo":{"status":"ok","timestamp":1700109606975,"user_tz":360,"elapsed":10327,"user":{"displayName":"","userId":""}},"outputId":"c5eb6f17-2f43-4e5c-fc8a-076b306b0bee","colab":{"base_uri":"https://localhost:8080/"}},"execution_count":null,"outputs":[{"output_type":"stream","name":"stdout","text":["Ingrese primer lado:10\n","Ingrese segundo lado:5\n","Ingrese tercer lado:10\n","Valores de los lados del triangulo\n","Lado 1 10\n","Lado 2 5\n","Lado 3 10\n","Lado mayor\n","10\n","El triangulo no es equilatero\n"]}]}],"metadata":{"colab":{"toc_visible":true,"provenance":[{"file_id":"/v2/external/notebooks/intro.ipynb","timestamp":1700109652297}]},"kernelspec":{"display_name":"Python 3","name":"python3"}},"nbformat":4,"nbformat_minor":0}
+class Operaciones:
+
+    def __init__(self):
+        self.valor1=int(input("Ingrese primer valor:"))
+        self.valor2=int(input("Ingrese segundo valor:"))
+
+    def sumar(self):
+        su=self.valor1+self.valor2
+        print("La suma es",su)
+
+    def restar(self):
+        re=self.valor1-self.valor2
+        print("La resta es",re)
+
+    def multiplicar(self):
+        pro=self.valor1*self.valor2
+        print("El producto es",pro)
+
+    def division(self):
+        divi=self.valor1/self.valor2
+        print("La division es",divi)
+
+# bloque principal
+operacion1=Operaciones()
+operacion1.sumar()
+operacion1.restar()
+operacion1.multiplicar()
+operacion1.division()
+
+
+
+class Cuadrado:
+
+    def __init__(self,lado):
+        self.lado=lado
+
+    def mostrar_perimetro(self):
+        per=self.lado*4
+        print("El perimetro del cuadrado es:",per)
+
+    def mostrar_superficie(self):
+        sup=self.lado*self.lado
+        print("La superficie del cuadrado es:",sup)
+
+# bloque principal
+cuadrado1=Cuadrado(12)
+cuadrado1.mostrar_perimetro()
+cuadrado1.mostrar_superficie()
+
+
+
+
+
+class mayor_edad:
+    def __init__(self):
+        self.val1=int(input("ingrese su edad:"))
+        
+    def resultado(self):
+        if self.val1 >= 18:
+            print(" Eres mayor de edad puedes pasar")
+        else:
+            print("Acceso denegado,Eres menor de edad") 
+
+#Bloque principal
+prueba=mayor_edad()
+prueba.resultado()
+
+
+
+
+class Triangulo:
+
+    def inicializar(self):
+        self.lado1=int(input("Ingrese primer lado:"))
+        self.lado2=int(input("Ingrese segundo lado:"))
+        self.lado3=int(input("Ingrese tercer lado:"))
+
+    def imprimir(self):
+        print("Valores de los lados del triangulo")
+        print("Lado 1",self.lado1)
+        print("Lado 2",self.lado2)
+        print("Lado 3",self.lado3)
+
+    def lado_mayor(self):
+        print("Lado mayor")
+        if self.lado1>self.lado2 and self.lado1>self.lado3:
+            print(self.lado1)
+        else:
+            if self.lado2>self.lado3:
+                print(self.lado2)
+            else:
+                print(self.lado3)
+
+    def es_equilatero(self):
+        if self.lado1==self.lado2 and self.lado1==self.lado3:
+            print("El triangulo es equilatero")
+        else:
+            print("El triangulo no es equilatero")
+
+# bloque principal
+triangulo1=Triangulo()
+triangulo1.inicializar()
+triangulo1.imprimir()
+triangulo1.lado_mayor()
+triangulo1.es_equilatero()
